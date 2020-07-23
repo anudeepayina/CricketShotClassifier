@@ -1,1 +1,1 @@
-# CricketTracker
+# Cricket Shot Tracker
