@@ -46,6 +46,6 @@ LSTM was the algorithm chosen. This is because this is a time-series classificat
 
 The model consisted of two LSTM cells (256 nodes each) and one dropout layer between the cells. Finally, it had one Dense layer with softmax activation. 
 ## Results
-After passing the test data through the model, an accuracy of 97% was achieved. This was a very promising result as the training data was limited to 38 videos per shot. With additional training data, a higher level of accuracy could be achieved. When eight additional sets of test data were passed into the model and predictions were obtained, the model predicted six of the eight correctly. This can be viewed [here](https://youtu.be/wsUOkzu-dtg)
+After passing the test data through the model, an accuracy of 97% was achieved. This was a very promising result as the training data was limited to 38 videos per shot. With additional training data, a higher level of accuracy could be achieved. When eight additional sets of test data were passed into the model and predictions were obtained, the model predicted six of the eight correctly. This can be viewed [here](https://youtu.be/wsUOkzu-dtg). The video shows each shot played with the label of the shot and the models prediction.  
 ## Future Work
 With more data, the model can be expanded to other cricket shots. 
