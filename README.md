@@ -1,5 +1,5 @@
 # Cricket Shot Classifier
-This project's aim was to create a machine learning model that can classify a batsman playing a shot in cricket. This was done by creating training data and using Google's [Video Intelligence API](https://cloud.google.com/video-intelligence), that has a feature called Person Detection. Using the data obtained from running the videos through the API, I then trained a Long Short Term Memory (LSTM) Network which was then used to classify a test set of videos. The model had excellent accuracy on the test set (97%) and with more training data, this model can be expanded to classify other cricket shots.
+This project's aim was to create a machine learning model that can classify a batsman playing a shot in cricket. This was done by creating training data and using Google's [Video Intelligence API](https://cloud.google.com/video-intelligence), that has a feature called Person Detection. Transforming the videos through the API, I then trained a Long Short Term Memory (LSTM) Network which was then used to classify a test set of videos. The model had excellent accuracy on the test set (97%) and with more training data, this model can be expanded to classify other cricket shots.
 # Training Data
 Firstly I was required to create some training data. I chose three shots to perform:
 - Forward Defensive
@@ -37,7 +37,7 @@ The following table shows an example of the output I recieved from the API:
 | 21 |         2.1 | 0.812573 | 0.583151 |     0.825023 |     0.592492 |      0.804273 |      0.594827 |      0.758623 |      0.611175 |          0.754473 |          0.57848  |           0.696373 |           0.569139 |       0.812573 |       0.606504 |        0.854073 |        0.54345  |       0.891423 |       0.650875 |        0.908023 |        0.601833 |     0.700523 |     0.438361 |      0.617523 |      0.443031 |      0.766923 |      0.35896  |       0.517923 |       0.347283 |       0.688073 |       0.25387  |        0.347773 |        0.291235 |            0 |            0 |
 
 After importing the data as a pandas dataframe, a certain amount of preprocessing had to be completed to prepare the data to be used for the model. The preprocessing steps can be seen in this [notebook](https://github.com/anudeepayina/CricketTracker/blob/master/Data_Preprocessing.ipynb).
-After preprocessing, I created training and testing data and then I was prepared to create the classification model.
+After preprocessing, I split the data into training and test sets and then I was prepared to create the classification model.
 
 # Classification using Long Short Term Memory Network
 ## Architecture
